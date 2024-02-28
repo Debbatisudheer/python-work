@@ -58,12 +58,40 @@ header {
 .buttons-container a {
     text-decoration: none; /* Remove underline from links */
 }
+/* Your existing styles */
+
+.top-navigation {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.top-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-navigation li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.top-navigation li:last-child {
+    margin-right: 0;
+}
+
+.top-navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
     .orange-button {
         width: 80%; /* Adjust width for smaller screens */
         height: 60px; /* Adjust height for smaller screens */
         margin: 10px auto; /* Center buttons horizontally */
-      
+        line-height: normal;
     }
 }
